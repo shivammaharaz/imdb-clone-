@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+// import { Card } from 'react-bootstrap';
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import './App.css';
+import Header from './components/header/Header';
+import Home from './pages/homepage/Home.js';
+// import Card from './components/card/Card';
+import Movielist from './components/movielist/Movielist';
+import Movie from './pages/movie/Movie';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        
+        <Header />
+        {/* <Card/> */}
+        <Routes>
+          <Route  index element={<Home/>}/>
+          <Route  path='movie/:id' element={<Movie />}/>
+          <Route  path='movies/:type' element={<Movielist />}/>
+          <Route  path='/*' element={<h1>error page</h1>}/>
+
+
+        </Routes>
+      </Router>
     </div>
   );
 }
