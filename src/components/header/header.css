@@ -1,0 +1,45 @@
+.header {
+    margin: 0 2.5rem;
+    padding: .5rem 0;
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+}
+
+.headerLeft, .headerRight {
+    display: flex;
+    align-items: center;
+
+}
+
+a > span{
+    margin: 0 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+}
+
+a > span:hover {
+    color: red;
+}
+
+.header_icon {
+    width: 80px;
+    cursor: pointer;
+}
+
+.user__avatar {
+    font-size: 2rem;
+}
+.link p{
+    background-color: yellow;
+    padding: .2rem;
+    font-size: 1.7rem;
+    color :black;
+    border-radius: 4px;
+    /* box-shadow: 0px 1px 8px 5px white; */
+}
+.link p span{
+    font-size: 2rem;
+    color: brown;
+}

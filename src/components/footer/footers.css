@@ -1,0 +1,10 @@
+.foot{
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  1px 1px 19px whitesmoke;
+}
